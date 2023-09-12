@@ -132,7 +132,8 @@ int main()
 	   printf(" - Selecione a opção desejada: \n \n");
 	   printf("\t1 - Registrar nome \n");
 	   printf("\t2 - Consultar nome \n");
-	   printf("\t3 - Deletar nome \n\n\n");
+	   printf("\t3 - Deletar nome \n");
+	   printf("\t4 - Sair do sistema \n\n");
 	   printf("Opção: " );//Fim do menu
 	
 	   scanf("%d", &opcao);//Armazenando as informações dadas pelo usuário
@@ -157,9 +158,15 @@ int main()
 		   system("pause");
 		   break;
 		   
+		   case 4:
+		   printf("Obrigado por escolher EBAC!\n\n");
+		   system("pause");
+		   return 0;
+		   break;	
+		   
 		   default:
-		   printf("\nessa opção não está disponível \n\n");
-		  
+		   printf("Essa opção não está disponível \n\n");
+		   system("pause");
 		   break;
 			//Fim da seleção	
 		}
